@@ -88,9 +88,17 @@ public class PollDisplayPanel extends JPanel
       g.setColor(Color.RED);
       degrees = countToDegrees(count1, total);
       drawSector(g, x, y, r, fromDegree, degrees);
+      fromDegree += degrees;
 
-      return;
-
+      g.setColor(Color.GREEN);
+      degrees = countToDegrees(count2, total);
+      drawSector(g, x, y, r, fromDegree, degrees);
+      fromDegree += degrees;
+      
+      g.setColor(Color.BLUE);
+      degrees = countToDegrees(count3, total);
+      drawSector(g, x, y, r, fromDegree, degrees);
+      fromDegree += degrees;
 
     }
     else
@@ -107,11 +115,11 @@ public class PollDisplayPanel extends JPanel
     y += (r + 20);
     g.setColor(Color.BLACK);
 
-    g.drawString(name1, x - r, y);
+    g.drawString(String name1, x - r, y);
 
-    g.drawString(name2, x, y);
+    g.drawString(String name2, x, y);
 
-    g.drawString(name3, x + r, y);
+    g.drawString(String name3, x + r, y);
 
 
     // Display the color squares:
