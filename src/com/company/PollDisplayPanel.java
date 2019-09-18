@@ -84,6 +84,9 @@ public class PollDisplayPanel extends JPanel
 
     if (total > 0)
     {
+    // takes degrees from count1
+    // updates from degrees based on previous degree
+    // does this for each count
       int degrees;
       g.setColor(Color.RED);
       degrees = countToDegrees(count1, total);
