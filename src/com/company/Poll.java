@@ -2,7 +2,7 @@
  * Implements a program with a pie chart
  * that shows interactive polling results for three candidates
  */
-
+package com.company;
 import java.awt.*;
 import javax.swing.*;
 
